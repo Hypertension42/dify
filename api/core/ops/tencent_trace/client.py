@@ -19,7 +19,7 @@ except ImportError:
 
 if TYPE_CHECKING:
     from opentelemetry.metrics import Meter
-    from opentelemetry.metrics._internal.instrument import Histogram
+    from opentelemetry.metrics import Histogram
     from opentelemetry.sdk.metrics.export import MetricReader
 
 from opentelemetry import trace as trace_api
