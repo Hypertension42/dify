@@ -129,7 +129,7 @@ class ModelInstance:
         prompt_messages: Sequence[PromptMessage],
         model_parameters: dict | None = None,
         tools: Sequence[PromptMessageTool] | None = None,
-        stop: list[str] | None = None,
+        stop: Sequence[str] | None = None,
         stream: bool = True,
         user: str | None = None,
         callbacks: list[Callback] | None = None,
