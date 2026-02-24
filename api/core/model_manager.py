@@ -114,7 +114,7 @@ class ModelInstance:
     @overload
     def invoke_llm(
         self,
-        prompt_messages: list[PromptMessage],
+        prompt_messages: Sequence[PromptMessage],
         model_parameters: dict | None = None,
         tools: Sequence[PromptMessageTool] | None = None,
         stop: list[str] | None = None,
@@ -126,7 +126,7 @@ class ModelInstance:
     @overload
     def invoke_llm(
         self,
-        prompt_messages: list[PromptMessage],
+        prompt_messages: Sequence[PromptMessage],
         model_parameters: dict | None = None,
         tools: Sequence[PromptMessageTool] | None = None,
         stop: list[str] | None = None,
